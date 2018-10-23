@@ -1,0 +1,466 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		92F6DBE4217FC692004EF98F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F6DBE3217FC692004EF98F /* AppDelegate.swift */; };
+		92F6DBE6217FC692004EF98F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F6DBE5217FC692004EF98F /* ViewController.swift */; };
+		92F6DBE9217FC692004EF98F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92F6DBE7217FC692004EF98F /* Main.storyboard */; };
+		92F6DBEB217FC694004EF98F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92F6DBEA217FC694004EF98F /* Assets.xcassets */; };
+		92F6DBEE217FC694004EF98F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92F6DBEC217FC694004EF98F /* LaunchScreen.storyboard */; };
+		92F6DBF9217FC694004EF98F /* Howland_ShudderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F6DBF8217FC694004EF98F /* Howland_ShudderTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		92F6DBF5217FC694004EF98F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 92F6DBD8217FC692004EF98F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 92F6DBDF217FC692004EF98F;
+			remoteInfo = "Howland-Shudder";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		92F6DBE0217FC692004EF98F /* Howland-Shudder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Howland-Shudder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		92F6DBE3217FC692004EF98F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		92F6DBE5217FC692004EF98F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		92F6DBE8217FC692004EF98F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		92F6DBEA217FC694004EF98F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		92F6DBED217FC694004EF98F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		92F6DBEF217FC694004EF98F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92F6DBF4217FC694004EF98F /* Howland-ShudderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Howland-ShudderTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		92F6DBF8217FC694004EF98F /* Howland_ShudderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Howland_ShudderTests.swift; sourceTree = "<group>"; };
+		92F6DBFA217FC694004EF98F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		92F6DBDD217FC692004EF98F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92F6DBF1217FC694004EF98F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		92F6DBD7217FC692004EF98F = {
+			isa = PBXGroup;
+			children = (
+				92F6DBE2217FC692004EF98F /* Howland-Shudder */,
+				92F6DBF7217FC694004EF98F /* Howland-ShudderTests */,
+				92F6DBE1217FC692004EF98F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		92F6DBE1217FC692004EF98F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				92F6DBE0217FC692004EF98F /* Howland-Shudder.app */,
+				92F6DBF4217FC694004EF98F /* Howland-ShudderTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		92F6DBE2217FC692004EF98F /* Howland-Shudder */ = {
+			isa = PBXGroup;
+			children = (
+				92F6DBE3217FC692004EF98F /* AppDelegate.swift */,
+				92F6DBE5217FC692004EF98F /* ViewController.swift */,
+				92F6DBE7217FC692004EF98F /* Main.storyboard */,
+				92F6DBEA217FC694004EF98F /* Assets.xcassets */,
+				92F6DBEC217FC694004EF98F /* LaunchScreen.storyboard */,
+				92F6DBEF217FC694004EF98F /* Info.plist */,
+			);
+			path = "Howland-Shudder";
+			sourceTree = "<group>";
+		};
+		92F6DBF7217FC694004EF98F /* Howland-ShudderTests */ = {
+			isa = PBXGroup;
+			children = (
+				92F6DBF8217FC694004EF98F /* Howland_ShudderTests.swift */,
+				92F6DBFA217FC694004EF98F /* Info.plist */,
+			);
+			path = "Howland-ShudderTests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		92F6DBDF217FC692004EF98F /* Howland-Shudder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92F6DBFD217FC695004EF98F /* Build configuration list for PBXNativeTarget "Howland-Shudder" */;
+			buildPhases = (
+				92F6DBDC217FC692004EF98F /* Sources */,
+				92F6DBDD217FC692004EF98F /* Frameworks */,
+				92F6DBDE217FC692004EF98F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Howland-Shudder";
+			productName = "Howland-Shudder";
+			productReference = 92F6DBE0217FC692004EF98F /* Howland-Shudder.app */;
+			productType = "com.apple.product-type.application";
+		};
+		92F6DBF3217FC694004EF98F /* Howland-ShudderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92F6DC00217FC695004EF98F /* Build configuration list for PBXNativeTarget "Howland-ShudderTests" */;
+			buildPhases = (
+				92F6DBF0217FC694004EF98F /* Sources */,
+				92F6DBF1217FC694004EF98F /* Frameworks */,
+				92F6DBF2217FC694004EF98F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				92F6DBF6217FC694004EF98F /* PBXTargetDependency */,
+			);
+			name = "Howland-ShudderTests";
+			productName = "Howland-ShudderTests";
+			productReference = 92F6DBF4217FC694004EF98F /* Howland-ShudderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		92F6DBD8217FC692004EF98F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Christian Howland";
+				TargetAttributes = {
+					92F6DBDF217FC692004EF98F = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					92F6DBF3217FC694004EF98F = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 92F6DBDF217FC692004EF98F;
+					};
+				};
+			};
+			buildConfigurationList = 92F6DBDB217FC692004EF98F /* Build configuration list for PBXProject "Howland-Shudder" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 92F6DBD7217FC692004EF98F;
+			productRefGroup = 92F6DBE1217FC692004EF98F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				92F6DBDF217FC692004EF98F /* Howland-Shudder */,
+				92F6DBF3217FC694004EF98F /* Howland-ShudderTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		92F6DBDE217FC692004EF98F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92F6DBEE217FC694004EF98F /* LaunchScreen.storyboard in Resources */,
+				92F6DBEB217FC694004EF98F /* Assets.xcassets in Resources */,
+				92F6DBE9217FC692004EF98F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92F6DBF2217FC694004EF98F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		92F6DBDC217FC692004EF98F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92F6DBE6217FC692004EF98F /* ViewController.swift in Sources */,
+				92F6DBE4217FC692004EF98F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92F6DBF0217FC694004EF98F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92F6DBF9217FC694004EF98F /* Howland_ShudderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		92F6DBF6217FC694004EF98F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 92F6DBDF217FC692004EF98F /* Howland-Shudder */;
+			targetProxy = 92F6DBF5217FC694004EF98F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		92F6DBE7217FC692004EF98F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				92F6DBE8217FC692004EF98F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		92F6DBEC217FC694004EF98F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				92F6DBED217FC694004EF98F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		92F6DBFB217FC695004EF98F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		92F6DBFC217FC695004EF98F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		92F6DBFE217FC695004EF98F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Howland-Shudder/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "cfh.Howland-Shudder";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		92F6DBFF217FC695004EF98F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Howland-Shudder/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "cfh.Howland-Shudder";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		92F6DC01217FC695004EF98F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Howland-ShudderTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "cfh.Howland-ShudderTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Howland-Shudder.app/Howland-Shudder";
+			};
+			name = Debug;
+		};
+		92F6DC02217FC695004EF98F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Howland-ShudderTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "cfh.Howland-ShudderTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Howland-Shudder.app/Howland-Shudder";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		92F6DBDB217FC692004EF98F /* Build configuration list for PBXProject "Howland-Shudder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92F6DBFB217FC695004EF98F /* Debug */,
+				92F6DBFC217FC695004EF98F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		92F6DBFD217FC695004EF98F /* Build configuration list for PBXNativeTarget "Howland-Shudder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92F6DBFE217FC695004EF98F /* Debug */,
+				92F6DBFF217FC695004EF98F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		92F6DC00217FC695004EF98F /* Build configuration list for PBXNativeTarget "Howland-ShudderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92F6DC01217FC695004EF98F /* Debug */,
+				92F6DC02217FC695004EF98F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 92F6DBD8217FC692004EF98F /* Project object */;
+}
