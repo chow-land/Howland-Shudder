@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  FeaturedViewController.swift
 //  Howland-Shudder
 //
 //  Created by Christian Howland on 10/23/18.
