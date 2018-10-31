@@ -1,0 +1,213 @@
+[
+    {
+        "name": "",
+        "isHero": true,
+        "films": [
+            {
+                "id": 300,
+                "tileImageURL": "https://loremflickr.com/250/400/300"
+            },
+            {
+                "id": 301,
+                "tileImageURL": "https://loremflickr.com/250/400/301"
+            },
+            {
+                "id": 302,
+                "tileImageURL": "https://loremflickr.com/250/400/302"
+            },
+            {
+                "id": 303,
+                "tileImageURL": "https://loremflickr.com/250/400/303"
+            },
+            {
+                "id": 304,
+                "tileImageURL": "https://loremflickr.com/250/400/304"
+            },
+            {
+                "id": 305,
+                "tileImageURL": "https://loremflickr.com/250/400/305"
+            },
+            {
+                "id": 306,
+                "tileImageURL": "https://loremflickr.com/250/400/306"
+            },
+            {
+                "id": 307,
+                "tileImageURL": "https://loremflickr.com/250/400/307"
+            },
+        ]
+    },
+    {
+        "name": "My List",
+        "isHero": false,
+        "films": [
+            {
+                "id": 100,
+                "tileImageURL": "https://loremflickr.com/250/400/100"
+            },
+            {
+                "id": 101,
+                "tileImageURL": "https://loremflickr.com/250/400/101"
+            },
+            {
+                "id": 102,
+                "tileImageURL": "https://loremflickr.com/250/400/102"
+            },
+            {
+                "id": 103,
+                "tileImageURL": "https://loremflickr.com/250/400/103"
+            },
+            {
+                "id": 104,
+                "tileImageURL": "https://loremflickr.com/250/400/104"
+            },
+            {
+                "id": 200,
+                "tileImageURL": "https://loremflickr.com/250/400/200"
+            },
+            {
+                "id": 201,
+                "tileImageURL": "https://loremflickr.com/250/400/201"
+            },
+            {
+                "id": 202,
+                "tileImageURL": "https://loremflickr.com/250/400/202"
+            },
+            {
+                "id": 203,
+                "tileImageURL": "https://loremflickr.com/250/400/203"
+            },
+            {
+                "id": 204,
+                "tileImageURL": "https://loremflickr.com/250/400/204"
+            },
+            {
+                "id": 205,
+                "tileImageURL": "https://loremflickr.com/250/400/205"
+            },
+            {
+                "id": 206,
+                "tileImageURL": "https://loremflickr.com/250/400/206"
+            },
+            {
+                "id": 207,
+                "tileImageURL": "https://loremflickr.com/250/400/207"
+            },
+            {
+                "id": 208,
+                "tileImageURL": "https://loremflickr.com/250/400/208"
+            },
+            {
+                "id": 209,
+                "tileImageURL": "https://loremflickr.com/250/400/209"
+            }
+        ]
+    },
+    {
+        "name": "Continue Watching",
+        "isHero": false,
+        "films": [
+            {
+                "id": 105,
+                "tileImageURL": "https://loremflickr.com/250/400/105"
+            },
+            {
+                "id": 106,
+                "tileImageURL": "https://loremflickr.com/250/400/106"
+            },
+            {
+                "id": 107,
+                "tileImageURL": "https://loremflickr.com/250/400/107"
+            },
+            {
+                "id": 108,
+                "tileImageURL": "https://loremflickr.com/250/400/108"
+            },
+            {
+                "id": 109,
+                "tileImageURL": "https://loremflickr.com/250/400/109"
+            },
+            {
+                "id": 110,
+                "tileImageURL": "https://loremflickr.com/250/400/110"
+            },
+            {
+                "id": 111,
+                "tileImageURL": "https://loremflickr.com/250/400/111"
+            },
+            {
+                "id": 112,
+                "tileImageURL": "https://loremflickr.com/250/400/112"
+            },
+        ]
+    },
+    {
+        "name": "Newly Added",
+        "isHero": false,
+        "films": [
+            {
+                "id": 113,
+                "tileImageURL": "https://loremflickr.com/250/400/113"
+            },
+            {
+                "id": 140,
+                "tileImageURL": "https://loremflickr.com/250/400/140"
+            },
+            {
+                "id": 141,
+                "tileImageURL": "https://loremflickr.com/250/400/141"
+            },
+            {
+                "id": 142,
+                "tileImageURL": "https://loremflickr.com/250/400/141"
+            },
+            {
+                "id": 143,
+                "tileImageURL": "https://loremflickr.com/250/400/142"
+            },
+            {
+                "id": 144,
+                "tileImageURL": "https://loremflickr.com/250/400/143"
+            },
+            {
+                "id": 145,
+                "tileImageURL": "https://loremflickr.com/250/400/144"
+            },
+            {
+                "id": 146,
+                "tileImageURL": "https://loremflickr.com/250/400/145"
+            },
+            {
+                "id": 147,
+                "tileImageURL": "https://loremflickr.com/250/400/146"
+            },
+            {
+                "id": 148,
+                "tileImageURL": "https://loremflickr.com/250/400/147"
+            },
+            {
+                "id": 149,
+                "tileImageURL": "https://loremflickr.com/250/400/148"
+            }
+        ]
+    },
+    {
+        "name": "Super awesome great movies",
+        "isHero": false,
+        "films": [
+            {
+                "id": 142,
+                "tileImageURL": "https://loremflickr.com/250/400/142"
+            },
+            {
+                "id": 143,
+                "tileImageURL": "https://loremflickr.com/250/400/143"
+            },
+            {
+                "id": 144,
+                "tileImageURL": "https://loremflickr.com/250/400/144"
+            }
+        ]
+    }
+]
+ 
