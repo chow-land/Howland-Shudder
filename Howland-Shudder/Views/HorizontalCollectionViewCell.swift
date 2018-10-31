@@ -1,5 +1,5 @@
 //
-//  CarouselCollectionViewCell.swift
+//  HorizontalCollectionViewCell
 //  Howland-Shudder
 //
 //  Created by Christian Howland on 10/24/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CarouselCollectionViewCell: UICollectionViewCell {
+class HorizontalCollectionViewCell: UICollectionViewCell {
     @IBOutlet private weak var filmImageView: UIImageView!
 
     private var loadingSpinner = UIActivityIndicatorView(style: .white)

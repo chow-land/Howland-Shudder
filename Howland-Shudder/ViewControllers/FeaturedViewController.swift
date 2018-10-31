@@ -11,7 +11,7 @@ import UIKit
 class FeaturedViewController: UIViewController, UITableViewDataSource {
     @IBOutlet weak var filmCategoriesTableView: UITableView!
 
-    private let cellID = "filmCategoriesTableViewCell"
+    private let cellID = "filmCategoryTableViewCell"
     private let viewModel = FeaturedViewModel()
 
     override func viewDidLoad() {
@@ -29,7 +29,7 @@ class FeaturedViewController: UIViewController, UITableViewDataSource {
     // MARK:  UITableViewDataSource
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = filmCategoriesTableView.dequeueReusableCell(withIdentifier: cellID, for: indexPath) as! FeaturedTableViewCell
+        let cell = filmCategoriesTableView.dequeueReusableCell(withIdentifier: cellID, for: indexPath) as! FilmCategoryTableViewCell
 
         cell.filmCategory = viewModel.filmCategory(forRow: indexPath.row)
 

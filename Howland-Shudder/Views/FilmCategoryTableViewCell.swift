@@ -1,5 +1,5 @@
 //
-//  FeaturedTableViewCell.swift
+//  FilmCategoryTableViewCell.swift
 //  Howland-Shudder
 //
 //  Created by Christian Howland on 10/28/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FeaturedTableViewCell: UITableViewCell, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+class FilmCategoryTableViewCell: UITableViewCell, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     @IBOutlet private weak var categoryLabel: UILabel!
     @IBOutlet private weak var horizontalCollectionView: UICollectionView!
 
@@ -73,7 +73,7 @@ class FeaturedTableViewCell: UITableViewCell, UICollectionViewDataSource, UIColl
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = horizontalCollectionView.dequeueReusableCell(withReuseIdentifier: cellID, for: indexPath) as! CarouselCollectionViewCell
+        let cell = horizontalCollectionView.dequeueReusableCell(withReuseIdentifier: cellID, for: indexPath) as! HorizontalCollectionViewCell
 
         let numFilms = filmCategory?.numberOfFilms ?? 1
         let loopSafeIndex = indexPath.row % numFilms
