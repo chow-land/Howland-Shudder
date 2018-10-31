@@ -7,15 +7,13 @@
 //
 
 import Foundation
-
-// TODO; this if for UIImage .. maybe can use CGImage, or just pass pack raw data?
+// TODO: investigate using CGImage over UIImage. Preferably we don't need to import UIKit at the data/networking layer.
 import UIKit
 
 class DataController {
     static let shared = DataController()
 
     private let jsonDecoder = JSONDecoder()
-
 
     // MARK: Film Categories
 
@@ -47,13 +45,14 @@ class DataController {
 
     // MARK: Films
 
-    var films = [Int : Film]()
+    private var films = [Int : Film]()
 
     func getFilm(withID id: Int) -> Film? {
         return films[id]
     }
 
     func merge(newFilm: Film) {
+        // TODO: If we already have the provided film, merge the updated fields of the newFilm into it. This will be important once we're parsing additional Film info from a notional 'GET: film details' endpoint -- For now we'll just add it to the dictionary if we don't already have it.
         guard films[newFilm.id] == nil else {
             return
         }
@@ -76,6 +75,8 @@ class DataController {
                 if let image = UIImage(data: data) {
                     completion(image)
                 }
+            } else {
+                // TODO: handle error states and display appropriate message to user
             }
         }
     }

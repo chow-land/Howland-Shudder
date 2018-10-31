@@ -13,55 +13,48 @@ class CarouselCollectionViewCell: UICollectionViewCell {
 
     private var loadingSpinner = UIActivityIndicatorView(style: .white)
 
-    var film: Film? {
-        didSet {
-            if let image = film?.image {
-                filmImageView.image = image
-                hideLoadingSpinner()
-            } else {
-                filmImageView.backgroundColor = film?.bgColor
-                showLoadingSpinner()
-            }
+    func configureWithFilm(film: Film) {
+        if let image = film.image {
+            filmImageView.image = image
+            loadingSpinner.stopAnimating()
+        } else {
+            filmImageView.backgroundColor = film.tileBackgroundColor
+            loadingSpinner.startAnimating()
         }
     }
 
     override func awakeFromNib() {
         super.awakeFromNib()
 
-        layer.masksToBounds = true
-        layer.cornerRadius = 6
-
+        configureCellStyles()
         addSubview(loadingSpinner)
-//        self.loadingSpinner.frame = self.bounds
-//        showLoadingSpinner()
     }
 
     override func layoutSubviews() {
         super.layoutSubviews()
 
-        self.loadingSpinner.frame = self.bounds
+        loadingSpinner.frame = self.bounds
     }
 
     override func prepareForReuse() {
         super.prepareForReuse()
 
-        film = nil
         filmImageView.image = nil
     }
 
-    private func showLoadingSpinner() {
-        guard !loadingSpinner.isAnimating else {
-            return
-        }
+    private func configureCellStyles() {
+        // rounded corners
+        contentView.layer.cornerRadius = 6
+        contentView.layer.borderWidth = 0.25
+        contentView.layer.borderColor = UIColor.black.cgColor
+        contentView.layer.masksToBounds = true
 
-        self.loadingSpinner.startAnimating()
-    }
-
-    private func hideLoadingSpinner() {
-        guard !loadingSpinner.isAnimating else {
-            return
-        }
-
-        self.loadingSpinner.stopAnimating()
+        // shadow
+        layer.shadowColor = UIColor.black.cgColor
+        layer.shadowOffset = CGSize(width: 10, height: 10.0)
+        layer.shadowRadius = 6
+        layer.shadowOpacity = 1.0
+        layer.masksToBounds = false
+        layer.shadowPath = UIBezierPath(roundedRect: bounds, cornerRadius: contentView.layer.cornerRadius).cgPath
     }
 }

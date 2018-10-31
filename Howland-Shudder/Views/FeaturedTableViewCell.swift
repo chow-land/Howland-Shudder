@@ -9,12 +9,10 @@
 import UIKit
 
 class FeaturedTableViewCell: UITableViewCell, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
-
     @IBOutlet private weak var categoryLabel: UILabel!
     @IBOutlet private weak var horizontalCollectionView: UICollectionView!
 
     private let cellID = "horizontalCollectionViewCell"
-
     private let numberTooLargeToScrollThrough = 1000000
 
     var filmCategory: FilmCategory? {
@@ -31,7 +29,6 @@ class FeaturedTableViewCell: UITableViewCell, UICollectionViewDataSource, UIColl
         categoryLabel.text = nil
     }
 
-
     override func awakeFromNib() {
         super.awakeFromNib()
 
@@ -42,9 +39,13 @@ class FeaturedTableViewCell: UITableViewCell, UICollectionViewDataSource, UIColl
     override func layoutSubviews() {
         super.layoutSubviews()
 
-        let showLargeImages = filmCategory?.isHero ?? false
+        configureCollectionViewLayout()
+    }
 
-        if showLargeImages {
+    private func configureCollectionViewLayout() {
+        let shouldShowLargeImages = filmCategory?.isHero ?? false
+
+        if shouldShowLargeImages {
             let midIndexPath = IndexPath(row: numberTooLargeToScrollThrough / 2, section: 0)
             horizontalCollectionView.scrollToItem(at: midIndexPath,
                                                   at: .centeredHorizontally,
@@ -72,7 +73,6 @@ class FeaturedTableViewCell: UITableViewCell, UICollectionViewDataSource, UIColl
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-
         let cell = horizontalCollectionView.dequeueReusableCell(withReuseIdentifier: cellID, for: indexPath) as! CarouselCollectionViewCell
 
         let numFilms = filmCategory?.numberOfFilms ?? 1
@@ -84,11 +84,7 @@ class FeaturedTableViewCell: UITableViewCell, UICollectionViewDataSource, UIColl
                 return cell
         }
 
-        if film.isImageBeingFetched {
-            return cell
-        }
-
-        cell.film = film
+        cell.configureWithFilm(film: film)
 
         if film.image == nil {
             film.loadImage {
@@ -97,8 +93,7 @@ class FeaturedTableViewCell: UITableViewCell, UICollectionViewDataSource, UIColl
                 }
             }
         }
-
-
+        
         return cell
     }
 }

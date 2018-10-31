@@ -13,14 +13,13 @@ class Film: Decodable {
     let id: Int
     let tileImageURL: URL
 
-    let bgColor: UIColor = .gray
+    let tileBackgroundColor: UIColor = .orange
     var image: UIImage? = nil
 
     var isImageBeingFetched = false
     
     func loadImage(completion: @escaping () -> ()) {
-        guard !isImageBeingFetched, image == nil else {
-            completion()
+        guard image == nil && !isImageBeingFetched else {
             return
         }
 

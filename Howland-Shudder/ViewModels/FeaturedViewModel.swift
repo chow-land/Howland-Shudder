@@ -9,7 +9,6 @@
 import Foundation
 
 class FeaturedViewModel {
-
     var numberOfCategories: Int {
         return DataController.shared.filmCategoriesCount
     }

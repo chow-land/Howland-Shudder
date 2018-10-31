@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		925CF6292186328F009DEBD6 /* FeaturedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925CF6282186328F009DEBD6 /* FeaturedTableViewCell.swift */; };
 		925CF62E21864FA3009DEBD6 /* MockCategoriesResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 925CF62D21864FA3009DEBD6 /* MockCategoriesResponse.json */; };
-		925CF6302187C6B3009DEBD6 /* MockFilmsResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 925CF62F2187C6B3009DEBD6 /* MockFilmsResponse.json */; };
+		925CF6302187C6B3009DEBD6 /* MockFilmResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 925CF62F2187C6B3009DEBD6 /* MockFilmResponse.json */; };
 		92D62F3B218230F300E34307 /* FilmCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D62F3A218230F300E34307 /* FilmCategory.swift */; };
 		92D62F402182314400E34307 /* CarouselCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D62F3F2182314400E34307 /* CarouselCollectionViewCell.swift */; };
 		92F6DBE4217FC692004EF98F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F6DBE3217FC692004EF98F /* AppDelegate.swift */; };
@@ -36,7 +36,7 @@
 /* Begin PBXFileReference section */
 		925CF6282186328F009DEBD6 /* FeaturedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedTableViewCell.swift; sourceTree = "<group>"; };
 		925CF62D21864FA3009DEBD6 /* MockCategoriesResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MockCategoriesResponse.json; sourceTree = "<group>"; };
-		925CF62F2187C6B3009DEBD6 /* MockFilmsResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MockFilmsResponse.json; sourceTree = "<group>"; };
+		925CF62F2187C6B3009DEBD6 /* MockFilmResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MockFilmResponse.json; sourceTree = "<group>"; };
 		92D62F3A218230F300E34307 /* FilmCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FilmCategory.swift; path = "Howland-Shudder/Models/FilmCategory.swift"; sourceTree = SOURCE_ROOT; };
 		92D62F3F2182314400E34307 /* CarouselCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CarouselCollectionViewCell.swift; path = "Howland-Shudder/Views/CarouselCollectionViewCell.swift"; sourceTree = SOURCE_ROOT; };
 		92F6DBE0217FC692004EF98F /* Howland-Shudder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Howland-Shudder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,10 +72,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		922C4C07218A08E7009A4358 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				92F6DC1421822B95004EF98F /* FeaturedViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		925CF62A21864D7F009DEBD6 /* Fixtures */ = {
 			isa = PBXGroup;
 			children = (
-				925CF62F2187C6B3009DEBD6 /* MockFilmsResponse.json */,
+				925CF62F2187C6B3009DEBD6 /* MockFilmResponse.json */,
 				925CF62D21864FA3009DEBD6 /* MockCategoriesResponse.json */,
 			);
 			path = Fixtures;
@@ -111,6 +119,7 @@
 		92F6DBE2217FC692004EF98F /* Howland-Shudder */ = {
 			isa = PBXGroup;
 			children = (
+				922C4C07218A08E7009A4358 /* ViewModels */,
 				92D62F3E2182312000E34307 /* Views */,
 				92F6DC1121822A2E004EF98F /* Networking */,
 				92F6DC0921816B3D004EF98F /* Models */,
@@ -120,7 +129,6 @@
 				92F6DBEA217FC694004EF98F /* Assets.xcassets */,
 				92F6DBEC217FC694004EF98F /* LaunchScreen.storyboard */,
 				92F6DBEF217FC694004EF98F /* Info.plist */,
-				92F6DC1421822B95004EF98F /* FeaturedViewModel.swift */,
 			);
 			path = "Howland-Shudder";
 			sourceTree = "<group>";
@@ -237,7 +245,7 @@
 				92F6DBEE217FC694004EF98F /* LaunchScreen.storyboard in Resources */,
 				92F6DBEB217FC694004EF98F /* Assets.xcassets in Resources */,
 				92F6DBE9217FC692004EF98F /* Main.storyboard in Resources */,
-				925CF6302187C6B3009DEBD6 /* MockFilmsResponse.json in Resources */,
+				925CF6302187C6B3009DEBD6 /* MockFilmResponse.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
