@@ -22,16 +22,10 @@ class FilmCategoryTableViewCell: UITableViewCell, UICollectionViewDataSource, UI
     private let cellID = "horizontalCollectionViewCell"
     private let numberTooLargeToScrollThrough = 1000000
     private let filmCellSize = CGSize(width: 90, height: 150)
-
-    private var largeFilmCellSize: CGSize {
-        let leftRightPadding = 20
-        let width = Int(window?.bounds.width ?? 1) - (2 * leftRightPadding)
-        return CGSize(width: width, height: 150)
-    }
+    private var filmCellSizeLarge = CGSize(width: 335, height: 150)
     
     private var isHeroRow: Bool {
         return filmCategory?.isHero ?? false
-
     }
 
     override func prepareForReuse() {
@@ -63,7 +57,7 @@ class FilmCategoryTableViewCell: UITableViewCell, UICollectionViewDataSource, UI
         let flowLayout = UICollectionViewFlowLayout()
         flowLayout.scrollDirection = .horizontal
 
-        flowLayout.itemSize = isHeroRow ? largeFilmCellSize : filmCellSize
+        flowLayout.itemSize = isHeroRow ? filmCellSizeLarge : filmCellSize
 
         horizontalCollectionView.collectionViewLayout = flowLayout
     }
