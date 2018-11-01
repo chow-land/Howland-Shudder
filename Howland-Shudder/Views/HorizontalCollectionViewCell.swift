@@ -11,7 +11,7 @@ import UIKit
 class HorizontalCollectionViewCell: UICollectionViewCell {
     @IBOutlet private weak var filmImageView: UIImageView!
 
-    private var loadingSpinner = UIActivityIndicatorView(style: .white)
+    private let loadingSpinner = UIActivityIndicatorView(style: .white)
 
     func configureWithFilm(film: Film) {
         if let image = film.image {

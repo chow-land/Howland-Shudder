@@ -12,20 +12,26 @@ class FilmCategoryTableViewCell: UITableViewCell, UICollectionViewDataSource, UI
     @IBOutlet private weak var categoryLabel: UILabel!
     @IBOutlet private weak var horizontalCollectionView: UICollectionView!
 
-    private let cellID = "horizontalCollectionViewCell"
-    private let numberTooLargeToScrollThrough = 1000000
-    private let filmCellSize = CGSize(width: 90, height: 150)
-    private var largeFilmCellSize: CGSize {
-        let leftRightPadding = 20
-        let width = Int(window?.bounds.width ?? 1) - (2 * leftRightPadding)
-        return CGSize(width: width, height: 150)
-    }
-
     var filmCategory: FilmCategory? {
         didSet {
             categoryLabel.text = filmCategory?.name
             horizontalCollectionView.reloadData()
         }
+    }
+
+    private let cellID = "horizontalCollectionViewCell"
+    private let numberTooLargeToScrollThrough = 1000000
+    private let filmCellSize = CGSize(width: 90, height: 150)
+
+    private var largeFilmCellSize: CGSize {
+        let leftRightPadding = 20
+        let width = Int(window?.bounds.width ?? 1) - (2 * leftRightPadding)
+        return CGSize(width: width, height: 150)
+    }
+    
+    private var isHeroRow: Bool {
+        return filmCategory?.isHero ?? false
+
     }
 
     override func prepareForReuse() {
@@ -57,14 +63,13 @@ class FilmCategoryTableViewCell: UITableViewCell, UICollectionViewDataSource, UI
         let flowLayout = UICollectionViewFlowLayout()
         flowLayout.scrollDirection = .horizontal
 
-        let isHero = filmCategory?.isHero ?? false
-        flowLayout.itemSize = isHero ? largeFilmCellSize : filmCellSize
+        flowLayout.itemSize = isHeroRow ? largeFilmCellSize : filmCellSize
 
         horizontalCollectionView.collectionViewLayout = flowLayout
     }
 
     private func scrollToMiddle() {
-        guard filmCategory?.isHero ?? false else {
+        guard isHeroRow else {
             return
         }
 
@@ -78,7 +83,7 @@ class FilmCategoryTableViewCell: UITableViewCell, UICollectionViewDataSource, UI
     // MARK: UICollectionViewDataSource
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        let shouldLoop = filmCategory?.isHero ?? false
+        let shouldLoop = isHeroRow
         let numFilms = filmCategory?.numberOfFilms ?? 0
 
         return shouldLoop ? numberTooLargeToScrollThrough : numFilms
